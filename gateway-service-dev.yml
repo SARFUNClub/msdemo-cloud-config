@@ -1,0 +1,20 @@
+gateway:
+  server:
+    port: 8765
+  config:
+    url:
+      eureka: http://70.37.50.54:8761/eureka/
+      zipkin: http://70.37.50.54:8762
+      
+zuul:
+  host:
+    connect-timeout-millis: 30000
+    socket-timeout-millis: 30000
+  prefix: /api
+  
+  routes:
+    onduty-service:
+      path: /onduty/**
+      service-id: onduty-service 
+      strip-prefix: false
+      
