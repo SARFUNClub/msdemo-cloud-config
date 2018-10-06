@@ -2,4 +2,4 @@ onduty
   server
     port: 3000
   config
-    eureka: http://discovery-service:8761/eureka
+    eureka: http://sarfun.southcentralus.cloudapp.azure.com:8761/eureka
