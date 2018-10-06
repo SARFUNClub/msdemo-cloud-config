@@ -2,4 +2,4 @@ onduty
   server
     port: 3000
   config
-    eureka: http://localhost:8761/eureka
+    eureka: http://discovery-service:8761/eureka
