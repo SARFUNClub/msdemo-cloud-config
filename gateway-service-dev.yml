@@ -15,6 +15,6 @@ zuul:
   routes:
     onduty-service:
       path: /onduty/**
-      service-id: onduty-service 
+      service-id: onduty-service
       strip-prefix: false
       
