@@ -3,8 +3,8 @@ gateway:
     port: 8765
   config:
     url:
-      eureka: http://70.37.50.54:8761/eureka/
-      zipkin: http://70.37.50.54:8762
+      eureka: http://discovery-service:8761/eureka/
+      zipkin: http://zipkin-service:8762
       
 zuul:
   host:
@@ -15,6 +15,9 @@ zuul:
   routes:
     onduty-service:
       path: /onduty/**
-      service-id: onduty-service 
+      service-id: onduty-service
       strip-prefix: false
-      
+    musicstore:
+      path: /musicstore/**
+      service-id: musicstore 
+      strip-prefix: false
