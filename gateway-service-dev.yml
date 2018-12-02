@@ -21,3 +21,7 @@ zuul:
       path: /musicstore/**
       service-id: musicstore 
       strip-prefix: false
+    fortune-teller-service:
+      path: /**
+      service-id: fortune-teller-service 
+      strip-prefix: false
